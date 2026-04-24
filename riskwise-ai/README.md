@@ -3,7 +3,7 @@
 An intelligent academic dashboard that helps universities identify at-risk students early using Machine Learning, and automates communication with parents and mentors.
 
 <p align="center">
-  <a href="https://jwalkorat-riskwise-ai.hf.space">🚀 View Live App on Hugging Face Spaces</a>
+  <a href="https://riskwise-ai-app.hf.space">🚀 View Live App on Hugging Face Spaces</a>
 </p>
 
 <p align="center">
