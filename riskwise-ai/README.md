@@ -1,6 +1,23 @@
 # RiskWise AI
 
-An open-source academic dashboard that utilizes machine learning to predict student dropout risk and automates multi-channel notifications (SMS and Email).
+An intelligent academic dashboard that helps universities identify at-risk students early using Machine Learning, and automates communication with parents and mentors.
+
+<p align="center">
+  <a href="https://jwalkorat-riskwise-ai.hf.space">🚀 View Live App on Hugging Face Spaces</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=twilio&logoColor=white" />
+  <img src="https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge&logo=yandex&logoColor=black" />
+</p>
+
+---
 
 ## Overview
 RiskWise AI analyzes raw academic data, such as subject marks and attendance, and processes it through a custom-trained machine learning model to calculate a real-time risk score. Based on the calculated risk category, the system can automatically trigger intervention alerts to mentors and parents.
@@ -16,6 +33,8 @@ RiskWise AI analyzes raw academic data, such as subject marks and attendance, an
 * **Automated Notifications**: 
   * Automatically generates in-memory PDF reports and dispatches them via email using the Brevo REST API.
   * Triggers SMS alerts for critical cases using the Twilio API.
+
+---
 
 ## Tech Stack
 
@@ -41,14 +60,16 @@ RiskWise AI analyzes raw academic data, such as subject marks and attendance, an
 * Twilio API (SMS dispatch)
 * Docker & Hugging Face Spaces (Containerization and Hosting)
 
+---
+
 ## Installation & Setup
 
 If you would like to fork and run this project locally, follow these steps:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/jwalkorat/riskwise-ai.git
-   cd riskwise-ai
+   git clone https://github.com/jwalkorat/RiskWise-AI.git
+   cd RiskWise-AI/riskwise-ai
    ```
 
 2. **Install dependencies**
@@ -57,7 +78,7 @@ If you would like to fork and run this project locally, follow these steps:
    ```
 
 3. **Configure Environment Variables**
-   Create a `.env.local` file in the root directory and add your credentials:
+   Create a `.env.local` file in the `riskwise-ai/` directory and add your credentials:
    ```env
    # Database Configuration
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
@@ -78,6 +99,8 @@ If you would like to fork and run this project locally, follow these steps:
    ```bash
    npm run dev
    ```
+
+---
 
 ## Contributing
 If you wish to contribute, feel free to fork the repository, create a feature branch, and submit a pull request. Ensure that you have the required Python dependencies installed (`catboost`, `scikit-learn`, `pandas`, `torch`) if you intend to modify the ML evaluation scripts.
